@@ -4,8 +4,7 @@
 #include "QueueAr.h"
 #include "linearprobing.h"
 
-//TODO:: here's the problem. heap overflows. the reason is that when we find an empty slot, we insert currBlock into it.
-//TODO:: but, we don't remove that slot from the heap. Possible solution: write a method to remove it from heap. It will take more CPU time.
+
 
 Defragmenter::Defragmenter(DiskDrive *diskDrive) : diskSize(diskDrive->getCapacity())
 {
